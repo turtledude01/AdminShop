@@ -84,6 +84,8 @@ public class Config implements Configurable
 	public void populate()
 	{
 		get().getNode("shops", "item-frames").setValue(true).setComment("This value determines whether or not to automatically place an item frame above shops.");
+		get().getNode("shops", "serverAccount").setValue(null).setComment("Set this to the server account, or null if unused");
+
 	}
 
 	@Override
